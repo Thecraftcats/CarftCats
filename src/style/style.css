@@ -5,14 +5,34 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+.darkmode {
+  background: #232323;
+  color: white;
+  animation-duration: 1s;
+}
+.darkmode .navbar{
+  background-color: #232323;
+}
+.darkmode .sub-name small{
+  color: white;
+}
+.darkmode .work-name::after {
+  background: white;
+}
+.darkmode .btn-dark {
+  background: wheat;
+  color: black;
+}
 body{
   font-family: "Poppins", sans-serif;
+  background: wheat;
+  display: block;
 }
 .navbar {
   width: 100%;
   height: 60px;
   display: flex;
+  background-color: rgba(255, 255, 255, 0.2); 
   justify-content: space-between;
 }
 .nav-name {
@@ -30,10 +50,88 @@ body{
   color: black;
   margin: 0 5px;
 }
+.container {
+  width: 70%;
+  height: auto;
+  margin: auto;
+}
 .btn-dark {
-  display: none;
+  width: 40px;
+  height: 35px;
+  display: flex;
+  margin: auto 5%;
+  text-align: center;
+  background: #232323;
+  color: white;
+  border-radius: 25%;
+  justify-content: center; /* Menengahkan secara horizontal */
+  align-items: center; /* Menengahkan secara vertikal */
+}
+.hiro {
+  width: 90%;
+  height: 45px;
+  background-color: rgba(255, 255, 255, 0.2); 
+  text-align: center;
+  margin: auto;
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-radius: 8px;
+}
+.hiro p{
+  margin: auto;
+}
+.sub-container {
+  margin: 2% 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.sub-name h1{
+  font-weight: bold;
+}
+.sub-name small{
+  color: black;
+  font-size: 15px;
+}
+.sub-name img{
+  width: 25px;
+  height: 25px;
+}
+.profil-img {
+  margin: auto;
+}
+.profil-img img{
+  width: 100px;
+  height: 100px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+.work {
+  margin: auto 5%;
+}
+.work-name {
+  position: relative;
+}
+
+.work p{
+  margin-top: 2%;
+}
+.skill {
+  margin: 2% 5%;
+}
+.skill-bio {
+  display: flex;
+}
+.skill-bio p{
+  margin: 0 2%;
 }
 @media (max-width: 760px ) {
+  .container {
+  width: 90%;
+  height: auto;
+  margin: auto;
+}
   .nav-list {
     display: none;
   }
@@ -46,5 +144,38 @@ body{
   border-radius: 25%;
   justify-content: center; /* Menengahkan secara horizontal */
   align-items: center; /* Menengahkan secara vertikal */
+}
+.sub-container {
+  display: block;
+}
+.sub-name h1{
+  font-size: 20px;
+}
+.sub-name small{
+  font-size: 12px;
+}
+.sub-name img{
+  width: 15px;
+  height: 15px;
+}
+.profil-img {
+  margin: 2% 40%;
+}
+.work h2{
+  font-size: 20px;
+}
+.work p{
+  font-size: 14px;
+  text-align: left;
+  margin-top: 2%;
+}
+.work-name::after {
+  margin: 8% -19%;
+}
+.skill h2{
+  font-size: 20px;
+}
+.skill-bio p{
+  font-size: 14px;
 }
 }

@@ -7,29 +7,59 @@
   <title></title>
   <link rel="stylesheet" href="src/style/style.css">
     <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
 </head>
 
 <body>
   <nav class="navbar">
+    
     <div class="nav-name">
-      CraftCars
+      CraftCats
     </div>
-    <ul class="nav-list">
-      <li><a href="/">Branda</a></li>
-      <li><a href="#">Contect</a></li>
-      <li><a href="#">Github</a></li>
-    </ul>
     <div class="btn-dark">
-      <a class="btn"><i data-feather="moon"></i></a>
+      <a class="btn" id="btns"><i data-feather="moon"></i></a>
     </div>
   </nav>
-
+  <main class="container">
+    <div class="hiro">
+      <p><span id="typed" class="typed"></span></p>
+    </div>
+    <div class="sub-container">
+      <div class="sub-name">
+      <h1>Dimas Yoga Kurniawan <img src="asset/verify.png" alt=""></h1>
+      <small>Begginer front end developer</small>
+      </div>
+      <div class="profil-img">
+        <img src="asset/profil.JPG" alt="">
+      </div>
+    </div>
+    <div class="work">
+      <h2 class="work-name">Work</h2>
+      <p>Front-end developers create visually appealing and interactive website interfaces using HTML, CSS, and JavaScript, collaborating with designers to ensure functionality. They optimize sites for various devices, work with back-end developers for seamless integration, and stay updated on web development trends for modern user experiences.</p>
+    </div>
+    <div class="skill">
+      <h2 class="work-name">Bio</h2>
+      <div class="skill-bio">
+        <h4>2005</h4>
+        <p>born in Lampung, Indonesia</p>
+      </div>
+      <div class="skill-bio">
+        <h4>2021</h4>
+        <p>entered high school</p>
+      </div>
+      <div class="skill-bio">
+        <h4>2024</h4>
+        <p>graduated from high school</p>
+      </div>
+    </div>
+  </main>
 
 
 
 <script>
       feather.replace();
     </script>
+ <script src="src/app.js"></script>
 </body>
 
 </html>
