@@ -122,9 +122,22 @@ body{
 }
 .skill-bio {
   display: flex;
+  margin: 2% 0;
 }
 .skill-bio p{
   margin: 0 2%;
+}
+.skill-bio p{
+  font-size: 15px;
+}
+footer {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.copyright {
+  font-size: 14px;
+  color: #7F7F7F;
 }
 @media (max-width: 760px ) {
   .container {
